@@ -1,0 +1,167 @@
+*{
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: 0;
+    text-decoration: none;
+    color: white;
+}
+
+body {
+    background-color: rgb(6, 7, 12);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    padding: 0 10%;
+    font-family: inter;
+  }
+
+#header, nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    z-index: 1;
+}
+  
+.nav-item {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-left: 60px;
+    transition: color 0.12s, transform 0.12s;
+}
+  
+nav .active {
+    color: #3FA2F6;
+}
+  
+.nav-item:hover {
+    color: #3FA2F6;
+}
+  
+.nav-item:active {
+    transform: scale(1.1);
+}
+  
+.logo {
+    font-size: 2rem;
+    font-weight: 800;
+}
+
+.container {
+    width: 50%;
+    height: 50%;
+    margin: 50px auto;
+    background-color: #1e1e1e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    min-height: 150px;
+    overflow: auto; 
+}
+
+.todo-input {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+input {
+    width: 75%;
+    padding: 20px 20px;
+    border-radius: 5px;
+    border: none;
+    color:black;
+    font-family: inter;
+
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #3FA2F6;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 0px 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-height: 300px; 
+    overflow-y: auto;
+}
+
+li {
+    background-color: #333;
+    padding: 10px;
+    margin: 5px 0;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 5px;
+    flex-wrap: wrap; 
+    font-family: inter;
+}
+
+li button {
+    background-color: rgb(21, 250, 0);
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 3px;
+}
+
+li button:hover {
+    background-color: rgba(21, 250, 0, 0.441);
+}
+
+.dark-mode-btn {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 1.5rem;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .dark-mode-btn:hover {
+    color: #3FA2F6;
+  }
+  
+  .light-mode {
+    background-color: white;
+    color: black;
+  }
+  
+  .light-mode #header, .light-mode nav {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  
+  .light-mode .nav-item, .light-mode .logo {
+    color: black;
+  }
+  
+  .light-mode .nav-item:hover {
+    color: #3FA2F6;
+  }
+  
+  .light-mode .dark-mode-btn i {
+    color: black;
+  }
+  
+  .light-mode p, .light-mode h1, .light-mode h2, .light-mode h3{
+    color: black;
+  }
+    
+  .light-mode ul, 
+  .light-mode ul li {
+    color: black !important;
+  }
